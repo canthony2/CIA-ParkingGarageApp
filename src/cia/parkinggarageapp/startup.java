@@ -17,7 +17,7 @@ public class startup {
 //              Check-In
 //                  Vehicle drive up to automated check-in machine
 //                  Automated check-in machine issues ticket
-//                  Indicates time and date of check-in
+//                      Indicates time and date of check-in
 //                  Kept in vehicle until check-out
 //              Check-Out
 //                  Vehicles drives up to automated check-out machine (if there is one)
@@ -36,7 +36,10 @@ public class startup {
         
         //Check-In
         cit.generateTicket();
-        
+        cot.readTicket();
+        cot.displayCustomerInformation();
+        cot.printReceipt();
+        cot.displayBusinessInformation();
         
     }
     
