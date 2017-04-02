@@ -34,6 +34,8 @@ public class startup {
         CheckInTerminal cit = new CheckInTerminal();
         CheckOutTerminal cot = new CheckOutTerminal();
         
+        //Check-In
+        cit.generateTicket();
         
         
     }
