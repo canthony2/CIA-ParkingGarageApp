@@ -31,8 +31,8 @@ public class startup {
 //                  Automated machine prints receipt
 //          End of Process
 
-        CheckInTerminal cit = new CheckInTerminal;
-        CheckOutTerminal cot = new CheckOutTerminal;
+        CheckInTerminal cit = new CheckInTerminal();
+        CheckOutTerminal cot = new CheckOutTerminal();
         
         
         
