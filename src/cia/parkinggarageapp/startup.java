@@ -35,11 +35,15 @@ public class startup {
         CheckOutTerminal cot = new CheckOutTerminal();
         
         //Check-In
+        cit.newCheckIn();
         cit.generateTicket();
+        cit.endCheckIn();
+        cot.newCheckOut();
         cot.readTicket();
         cot.displayCustomerInformation();
         cot.printReceipt();
         cot.displayBusinessInformation();
+        cot.endCheckOut();
         
     }
     
