@@ -14,10 +14,12 @@ public class CheckInTerminal {
     private Ticket ticket;
     
     public final void newCheckIn() {
+        //make ticket
         
     }
 
     public final void endCheckIn() {
+        //print ticket
         
     }
     

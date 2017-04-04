@@ -14,26 +14,32 @@ public class CheckOutTerminal {
     private Receipt reciept;
     
     public final void newCheckOut() {
+        //make receipt/record time
         
     }
 
     public final void readTicket() {
-        
+        //read ticket to find check-in information
     }
 
     public final void displayCustomerInformation() {
+        //show how long customer has stayed and how much customer owes
         
     }
 
     public final void printReceipt() {
+        //print customer receipt
         
     }
 
     public final void displayBusinessInformation() {
+        //log totals on payments, tickets, and how long customers have stayed
+        //log totals to make averages
         
     }
 
     public final void endCheckOut() {
+        //output strategies
         
     }
     
