@@ -9,7 +9,7 @@ package cia.parkinggarageapp;
  *
  * @author knyghtspup
  */
-public class MinNoMaxFee {
+public abstract class MinNoMaxFee {
     
     
     
