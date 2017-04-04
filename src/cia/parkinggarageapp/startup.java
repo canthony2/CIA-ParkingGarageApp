@@ -36,7 +36,6 @@ public class startup {
         
         //Check-In
         cit.newCheckIn();
-        cit.generateTicket();
         cit.endCheckIn();
         cot.newCheckOut();
         cot.readTicket();

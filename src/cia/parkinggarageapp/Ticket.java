@@ -9,16 +9,6 @@ package cia.parkinggarageapp;
  *
  * @author knyghtspup
  */
-public class CheckInTerminal {
-
-    private Ticket ticket;
-    
-    public final void newCheckIn() {
-        
-    }
-
-    public final void endCheckIn() {
-        
-    }
+public class Ticket {
     
 }

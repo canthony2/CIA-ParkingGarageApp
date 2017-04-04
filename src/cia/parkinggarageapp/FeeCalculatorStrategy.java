@@ -1,24 +1,19 @@
+package cia.parkinggarageapp;
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package cia.parkinggarageapp;
 
 /**
  *
  * @author knyghtspup
  */
-public class CheckInTerminal {
-
-    private Ticket ticket;
+public interface FeeCalculatorStrategy {
     
-    public final void newCheckIn() {
-        
-    }
-
-    public final void endCheckIn() {
-        
-    }
+    public abstract MinMaxFee();
+    
+    public abstract MinNoMaxFee();
     
 }
