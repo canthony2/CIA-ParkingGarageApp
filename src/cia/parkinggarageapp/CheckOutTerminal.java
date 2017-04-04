@@ -11,6 +11,8 @@ package cia.parkinggarageapp;
  */
 public class CheckOutTerminal {
     
+    private Receipt reciept;
+    
     public final void newCheckOut() {
         
     }

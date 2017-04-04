@@ -9,7 +9,7 @@ package cia.parkinggarageapp;
  *
  * @author knyghtspup
  */
-public class Ticket {
+public class Receipt {
     
     
     
