@@ -9,7 +9,7 @@ package cia.parkinggarageapp;
  *
  * @author knyghtspup
  */
-public abstract class MinMaxFee {
+public abstract class MinMaxFee implements FeeCalculatorStrategy {
     
     
     
