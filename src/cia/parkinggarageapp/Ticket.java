@@ -10,7 +10,9 @@ package cia.parkinggarageapp;
  * @author knyghtspup
  */
 public class Ticket {
-    
-    
+
+    public Ticket(String ticketId, double hoursParked) {
+        
+    }
     
 }

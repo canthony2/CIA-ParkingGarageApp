@@ -14,12 +14,14 @@ public class CheckOutTerminal {
     private Receipt reciept;
     
     public final void newCheckOut() {
-        //make receipt/record time
-        
+        //make receipt
+        //receipt in charge of finding how much customer owes
+        reciept = new Receipt();
     }
 
-    public final void readTicket() {
-        //read ticket to find check-in information
+    public final void calculateFee() {
+        //calculate fee
+        
     }
 
     public final void displayCustomerInformation() {

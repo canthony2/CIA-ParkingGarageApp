@@ -13,13 +13,13 @@ public class CheckInTerminal {
 
     private Ticket ticket;
     
-    public final void newCheckIn() {
+    public final void newCheckIn(String ticketId, double hoursParked) {
         //make ticket
-        
+        ticket = new Ticket(ticketId, hoursParked);
     }
 
     public final void endCheckIn() {
-        //print ticket
+        //log ticket for Check-Out Terminal
         
     }
     
