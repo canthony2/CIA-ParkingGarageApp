@@ -11,14 +11,6 @@ package cia.parkinggarageapp;
  */
 public class Ticket {
 
-    private CheckOutTerminal checkOutTerminal;
-   
-    public Ticket(String ticketId) {
-        
-    }
-
-    public final void generateTicket(String vehicleId, double hoursParked) {
-        
-    }
+    
     
 }
