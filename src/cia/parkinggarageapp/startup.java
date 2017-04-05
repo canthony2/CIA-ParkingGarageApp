@@ -37,7 +37,7 @@ public class startup {
         
         //Check-In
         v.newGarageVisit("");
-        v.retrieveTicket("");
+        v.retrieveTicket("", 0.0);
         
     }
     
