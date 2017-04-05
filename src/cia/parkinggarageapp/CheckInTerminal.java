@@ -11,6 +11,16 @@ package cia.parkinggarageapp;
  */
 public class CheckInTerminal {
 
+    private Ticket ticket;
     
+    public CheckInTerminal(String vehicleId) {
+        //pass vehicle id to ticket
+        ticket = new Ticket(vehicleId);
+    }
+
+    public final void generateTicket(String vehicleId, double hoursParked) {
+        //log hours parked
+        ticket.logHoursParked(vehicleId, hoursParked);
+    }
 
 }

@@ -36,7 +36,8 @@ public class startup {
         Vehicle v = new Vehicle();
         
         //Check-In
-        
+        v.newGarageVisit("");
+        v.retrieveTicket("");
         
     }
     
