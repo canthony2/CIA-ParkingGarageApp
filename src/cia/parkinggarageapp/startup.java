@@ -45,26 +45,6 @@ public class startup {
         cot.printReceipt();
         cot.displayBusinessInformation();
         cot.endCheckOut();
-                
-        //Check-In
-        cit.newCheckIn("");
-        cit.endCheckIn("", 0.0);
-        //Check-Out
-        cot.newCheckOut();
-        cot.displayCustomerInformation();
-        cot.printReceipt();
-        cot.displayBusinessInformation();
-        cot.endCheckOut();
-        
-        //Check-In
-        cit.newCheckIn("");
-        cit.endCheckIn("", 0.0);
-        //Check-Out
-        cot.newCheckOut();
-        cot.displayCustomerInformation();
-        cot.printReceipt();
-        cot.displayBusinessInformation();
-        cot.endCheckOut();
         
     }
     
