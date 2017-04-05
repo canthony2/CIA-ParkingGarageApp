@@ -11,7 +11,7 @@ package cia.parkinggarageapp;
  */
 public class Ticket {
 
-    public Ticket(String vehicleId) {
+    public Ticket(String vehicleId, double hoursParked) {
         //pass vehicleId 
         
     }
