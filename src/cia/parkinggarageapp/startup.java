@@ -33,19 +33,8 @@ public class startup {
 //                  Automated machine logs total hours and total fee's for manager
 //          End of Process
 
-        CheckInTerminal cit = new CheckInTerminal();
-        CheckOutTerminal cot = new CheckOutTerminal();
         
-        //Check-In
-        cit.newCheckIn("");
-        cit.endCheckIn("", 0.0);
-        //Check-Out
-        cot.newCheckOut();
-        cot.displayCustomerInformation();
-        cot.printReceipt();
-        cot.displayBusinessInformation();
-        cot.endCheckOut();
-        
+
     }
     
 }
