@@ -12,10 +12,12 @@ package cia.parkinggarageapp;
 public class Ticket {
 
     public Ticket(String vehicleId) {
+        //pass vehicleId 
         
     }
 
     public final void logHoursParked(String vehicleId, double hoursParked) {
+        //
         
     }
     
