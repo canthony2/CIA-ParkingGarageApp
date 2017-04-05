@@ -13,14 +13,14 @@ public class CheckInTerminal {
 
     private Ticket ticket;
     
-    public CheckInTerminal(String vehicleId, double hoursParked) {
+    public CheckInTerminal(String vehicleId) {
         //pass vehicle id to ticket
-        ticket = new Ticket(vehicleId, hoursParked);
+        ticket = new Ticket(vehicleId);
     }
 
-    public final void generateTicket(String vehicleId, double hoursParked) {
+    public final void generateTicket(String ticketId, double hoursParked) {
         //have Ticket log hours parked
-        ticket.logHoursParked(vehicleId, hoursParked);
+        ticket.logHoursParked(ticketId, hoursParked);
     }
 
 }

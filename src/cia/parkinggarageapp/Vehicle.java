@@ -13,10 +13,15 @@ public class Vehicle {
 
     private CheckInTerminal cit;
     
-    public final void newGarageVisit(String vehicleId, double hoursParked) {
+    public final void newGarageVisit(String vehicleId) {
         //vehicle id
             //pass vehicle id to check-in terminal
-        cit = new CheckInTerminal(vehicleId, hoursParked);
+        cit = new CheckInTerminal(vehicleId);
     }
 
+    public final void retrieveTicket(String ticketId, double hoursParked) {
+        //pass hoursParked to ticket via the Check-In Terminal
+        cit.generateTicket(ticketId, hoursParked);
+    }
+    
 }
