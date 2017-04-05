@@ -37,8 +37,8 @@ public class startup {
         CheckOutTerminal cot = new CheckOutTerminal();
         
         //Check-In
-        cit.newCheckIn("", 0.0);
-        cit.endCheckIn();
+        cit.newCheckIn("");
+        cit.endCheckIn("", 0.0);
         //Check-Out
         cot.newCheckOut();
         cot.displayCustomerInformation();
@@ -47,8 +47,8 @@ public class startup {
         cot.endCheckOut();
                 
         //Check-In
-        cit.newCheckIn("", 0.0);
-        cit.endCheckIn();
+        cit.newCheckIn("");
+        cit.endCheckIn("", 0.0);
         //Check-Out
         cot.newCheckOut();
         cot.displayCustomerInformation();
@@ -57,8 +57,8 @@ public class startup {
         cot.endCheckOut();
         
         //Check-In
-        cit.newCheckIn("", 0.0);
-        cit.endCheckIn();
+        cit.newCheckIn("");
+        cit.endCheckIn("", 0.0);
         //Check-Out
         cot.newCheckOut();
         cot.displayCustomerInformation();

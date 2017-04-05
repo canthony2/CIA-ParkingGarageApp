@@ -12,6 +12,7 @@ package cia.parkinggarageapp;
 public class CheckOutTerminal {
     
     private Receipt reciept;
+    private FeeCalculatorStrategy fcs;
     
     public final void newCheckOut() {
         //make receipt

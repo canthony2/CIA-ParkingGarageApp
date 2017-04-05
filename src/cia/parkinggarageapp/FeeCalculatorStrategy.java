@@ -12,8 +12,12 @@ package cia.parkinggarageapp;
  */
 public interface FeeCalculatorStrategy {
     
-    public abstract MinMaxFee MinMaxFee();
+    public abstract double minimumCharge();
     
-    public abstract MinNoMaxFee MinNoMaxFee();
+    public abstract int paidTime();
+    
+    public abstract double additionalCharge();
+    
+    public abstract double additionalTime();
     
 }
