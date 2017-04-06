@@ -30,7 +30,7 @@ public class CheckInTerminal {
         return ticketId;
     }
 
-    public void setTicketId(String ticketId) {
+    public final void setTicketId(String ticketId) {
         if(ticketId == null || ticketId.isEmpty()) {
             System.out.println("No Ticket ID Found: Please Enter a Ticket ID");
         }
@@ -41,7 +41,7 @@ public class CheckInTerminal {
         return hoursParked;
     }
 
-    public void setHoursParked(double hoursParked) {
+    public final void setHoursParked(double hoursParked) {
         this.hoursParked = hoursParked;
     }
 
