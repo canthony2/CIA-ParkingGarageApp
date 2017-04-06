@@ -33,11 +33,7 @@ public class startup {
 //                  Automated machine logs total hours and total fee's for manager
 //          End of Process
 
-        Vehicle v = new Vehicle();
         
-        //Check-In
-        v.newGarageVisit("");
-        v.retrieveTicket("", 0.0);
         
     }
     

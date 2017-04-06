@@ -9,7 +9,8 @@ package cia.parkinggarageapp;
  *
  * @author knyghtspup
  */
-public class CheckInTerminal {
-
+public class BusinessInformation {
+    
+    
     
 }
