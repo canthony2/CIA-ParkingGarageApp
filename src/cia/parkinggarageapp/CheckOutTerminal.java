@@ -15,7 +15,7 @@ public class CheckOutTerminal {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    void readTicket(double hoursParked) {
+    public final void readTicket(double hoursParked) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
