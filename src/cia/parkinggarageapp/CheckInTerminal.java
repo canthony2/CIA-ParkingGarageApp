@@ -23,6 +23,7 @@ public class CheckInTerminal {
     }
 
     public final void endGarageVisit(double hoursParked) {
+        //
         
     }
     
