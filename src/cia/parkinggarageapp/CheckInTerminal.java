@@ -23,7 +23,7 @@ public class CheckInTerminal {
     }
 
     public final void endGarageVisit(double hoursParked) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
     public String getTicketId() {
