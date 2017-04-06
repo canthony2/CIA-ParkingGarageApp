@@ -11,5 +11,31 @@ package cia.parkinggarageapp;
  */
 public class CheckInTerminal {
 
+    private String ticketId;
+    private double hoursParked;
+    private CheckOutTerminal cot;
     
+    public final void startNewGarageVisit(String ticketId, double hoursParked) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    public String getTicketId() {
+        return ticketId;
+    }
+
+    public void setTicketId(String ticketId) {
+        if(ticketId == null || ticketId.isEmpty()) {
+            System.out.println("No Ticket ID Found: Please Enter a Ticket ID");
+        }
+        this.ticketId = ticketId;
+    }
+
+    public double getHoursParked() {
+        return hoursParked;
+    }
+
+    public void setHoursParked(double hoursParked) {
+        this.hoursParked = hoursParked;
+    }
+
 }
