@@ -11,12 +11,18 @@ package cia.parkinggarageapp;
  */
 public class CheckOutTerminal {
 
-    CheckOutTerminal(String ticketId, double hoursParked) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    private Receipt receipt;
+    
+    private FeeCalculatorStrategy fcs;
+    
+    private BusinessInformation businessInfo;
+    
+    public CheckOutTerminal(String ticketId) {
+        
     }
 
     public final void readTicket(double hoursParked) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }

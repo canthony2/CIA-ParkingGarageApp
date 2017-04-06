@@ -16,15 +16,13 @@ public class CheckInTerminal {
     private CheckOutTerminal cot;
     
     public final void startNewGarageVisit(String ticketId) {
-        //pass ticketId and hoursParked to CheckOutTerminal
-        cot = new CheckOutTerminal(ticketId, hoursParked);
-        //have CheckOutTerminal read ticket to find hoursParked
-        cot.readTicket(hoursParked);
+        //pass ticketId to CheckOutTerminal
+        cot = new CheckOutTerminal(ticketId);
     }
 
     public final void endGarageVisit(double hoursParked) {
-        //
-        
+        //have CheckOutTerminal read ticket to find hoursParked
+        cot.readTicket(hoursParked);
     }
     
     public String getTicketId() {
