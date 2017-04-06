@@ -35,7 +35,7 @@ public class startup {
 
         CheckInTerminal cit = new CheckInTerminal();
         
-        cit.startNewGarageVisit();
+        cit.startNewGarageVisit("", 0.0);
         
     }
     

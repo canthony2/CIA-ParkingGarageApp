@@ -16,7 +16,10 @@ public class CheckInTerminal {
     private CheckOutTerminal cot;
     
     public final void startNewGarageVisit(String ticketId, double hoursParked) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        //pass ticketId and hoursParked to CheckOutTerminal
+        cot = new CheckOutTerminal(ticketId, hoursParked);
+        //have CheckOutTerminal read ticket to find hoursParked
+        cot.readTicket(hoursParked);
     }
 
     public String getTicketId() {
