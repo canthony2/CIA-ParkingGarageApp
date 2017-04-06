@@ -15,13 +15,17 @@ public class CheckInTerminal {
     private double hoursParked;
     private CheckOutTerminal cot;
     
-    public final void startNewGarageVisit(String ticketId, double hoursParked) {
+    public final void startNewGarageVisit(String ticketId) {
         //pass ticketId and hoursParked to CheckOutTerminal
         cot = new CheckOutTerminal(ticketId, hoursParked);
         //have CheckOutTerminal read ticket to find hoursParked
         cot.readTicket(hoursParked);
     }
 
+    public final void endGarageVisit(double hoursParked) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+    
     public String getTicketId() {
         return ticketId;
     }
