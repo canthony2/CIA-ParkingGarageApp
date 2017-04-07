@@ -16,7 +16,8 @@ public class CheckOutTerminal {
     private BusinessInformation businessInfo;
     
     public CheckOutTerminal(String ticketId) {
-        
+        receipt = new Receipt();
+        businessInfo = new BusinessInformation();
     }
 
     public final void readTicket(double hoursParked) {
