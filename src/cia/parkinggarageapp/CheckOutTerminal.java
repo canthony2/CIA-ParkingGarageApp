@@ -12,9 +12,7 @@ package cia.parkinggarageapp;
 public class CheckOutTerminal {
 
     private Receipt receipt;
-    
     private FeeCalculatorStrategy fcs;
-    
     private BusinessInformation businessInfo;
     
     public CheckOutTerminal(String ticketId) {
