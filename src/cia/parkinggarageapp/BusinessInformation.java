@@ -10,7 +10,9 @@ package cia.parkinggarageapp;
  * @author knyghtspup
  */
 public class BusinessInformation {
-    
-    
+
+    public BusinessInformation(String ticketId, double hoursParked) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
