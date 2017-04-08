@@ -18,14 +18,11 @@ public class CheckOutTerminal {
     public CheckOutTerminal(String ticketId, double hoursParked) {
         receipt = new Receipt(ticketId, hoursParked);
         businessInfo = new BusinessInformation(ticketId, hoursParked);
+        businessInfo.shareBusinessName();
     }
 
     public final void readTicket(String ticketId, double hoursParked) {
         receipt.printReceipt(ticketId, hoursParked);
-    }
-    
-    public final void retrieveBusinessName() {
-        
     }
     
     public final void printBusinessReceipt() {

@@ -27,5 +27,9 @@ public class BusinessInformation {
         }
         this.businessName = businessName;
     }
+
+    public final void shareBusinessName() {
+        
+    }
     
 }
