@@ -15,13 +15,9 @@ public class CheckOutTerminal {
     private FeeCalculatorStrategy fcs;
     private BusinessInformation businessInfo;
     
-    public CheckOutTerminal(String ticketId) {
+    public CheckOutTerminal(String ticketId, double hoursParked) {
         receipt = new Receipt();
         businessInfo = new BusinessInformation();
-    }
-
-    public final void readTicket(double hoursParked) {
-        
     }
     
 }
