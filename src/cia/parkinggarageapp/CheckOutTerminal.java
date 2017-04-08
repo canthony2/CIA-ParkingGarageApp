@@ -19,5 +19,13 @@ public class CheckOutTerminal {
         receipt = new Receipt(ticketId, hoursParked);
         businessInfo = new BusinessInformation(ticketId, hoursParked);
     }
+
+    public final void readTicket(String ticketId, double hoursParked) {
+        receipt.printReceipt();
+    }
+    
+    public final void retrieveBusinessName() {
+        
+    }
     
 }

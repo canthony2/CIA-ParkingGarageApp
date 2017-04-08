@@ -14,5 +14,9 @@ public class Receipt {
     public Receipt(String ticketId, double hoursParked) {
         
     }
+
+    public final void printReceipt() {
+        
+    }
     
 }

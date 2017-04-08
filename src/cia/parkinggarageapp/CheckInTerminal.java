@@ -18,6 +18,7 @@ public class CheckInTerminal {
     public final void newVehicle(String ticketId, double hoursParked) {
         //pass ticketId to CheckOutTerminal
         cot = new CheckOutTerminal(ticketId, hoursParked);
+        cot.readTicket(ticketId, hoursParked);
     }
 
     public String getTicketId() {
