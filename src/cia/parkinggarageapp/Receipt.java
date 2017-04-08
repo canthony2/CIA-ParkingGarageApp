@@ -15,7 +15,11 @@ public class Receipt {
         
     }
 
-    public final void printReceipt() {
+    public final void printReceipt(String ticketId, double hoursparked) {
+        
+    }
+
+    public final void printBusinessReceipt() {
         
     }
     

@@ -21,11 +21,15 @@ public class CheckOutTerminal {
     }
 
     public final void readTicket(String ticketId, double hoursParked) {
-        receipt.printReceipt();
+        receipt.printReceipt(ticketId, hoursParked);
     }
     
     public final void retrieveBusinessName() {
         
+    }
+    
+    public final void printBusinessReceipt() {
+        receipt.printBusinessReceipt();
     }
     
 }
