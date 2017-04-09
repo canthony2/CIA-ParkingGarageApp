@@ -7,14 +7,15 @@ package cia.parkinggarageapp;
 public class BusinessInformation {
 
     private String businessName;
+    private CheckOutTerminal cot;
     
     public BusinessInformation(String ticketId, double hoursParked) {
         
     }
 
-//    public final void shareBusinessName() {
-//        
-//    }
+    public final void sendBusinessName(String businessName) {
+        cot.retrieveBusinessName(businessName);
+    }
     
     public String getBusinessName() {
         return businessName;
