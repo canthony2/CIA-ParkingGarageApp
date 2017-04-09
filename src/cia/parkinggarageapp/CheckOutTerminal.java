@@ -13,7 +13,7 @@ public class CheckOutTerminal {
     public CheckOutTerminal(String ticketId, double hoursParked) {
         receipt = new Receipt(ticketId, hoursParked);
         businessInfo = new BusinessInformation(ticketId, hoursParked);
-        businessInfo.shareBusinessName();
+//        businessInfo.shareBusinessName();
     }
 
     public final void readTicket(String ticketId, double hoursParked) {

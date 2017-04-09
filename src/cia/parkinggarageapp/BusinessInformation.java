@@ -12,9 +12,9 @@ public class BusinessInformation {
         
     }
 
-    public final void shareBusinessName() {
-        
-    }
+//    public final void shareBusinessName() {
+//        
+//    }
     
     public String getBusinessName() {
         return businessName;
