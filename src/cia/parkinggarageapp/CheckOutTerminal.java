@@ -15,20 +15,20 @@ public class CheckOutTerminal {
         businessInfo = new BusinessInformation(ticketId, hoursParked);
     }
 
-    public final void readTicket(String ticketId, double hoursParked) {
-        receipt.printReceipt(ticketId, hoursParked);
-    }
-    
-    public final void printBusinessReceipt() {
-        receipt.printBusinessReceipt();
-    }
-
     public final void retrieveBusinessName(String businessName) {
         
     }
     
     public final void calculateFee() {
         
+    }
+    
+    public final void readTicket(String ticketId, double hoursParked) {
+        receipt.printReceipt(ticketId, hoursParked);
+    }
+    
+    public final void printBusinessReceipt() {
+        receipt.printBusinessReceipt();
     }
     
 }
