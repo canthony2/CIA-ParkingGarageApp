@@ -17,6 +17,10 @@ public class BusinessInformation {
         
     }
 
+    public final void shareBusinessName() {
+        
+    }
+    
     public String getBusinessName() {
         return businessName;
     }
@@ -26,10 +30,6 @@ public class BusinessInformation {
             System.out.println("Name not registered: Please enter a certified name");
         }
         this.businessName = businessName;
-    }
-
-    public final void shareBusinessName() {
-        
     }
     
 }
