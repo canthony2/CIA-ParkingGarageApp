@@ -11,23 +11,25 @@ package cia.parkinggarageapp;
  */
 public class MinMaxFee implements FeeCalculatorStrategy {
 
+    private int maxTime;
+    
     @Override
-    public double minimumCharge() {
+    public final double minimumCharge() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public int paidTime() {
+    public final int paidTime() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public double additionalCharge() {
+    public final double additionalCharge() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public double additionalTime() {
+    public final double additionalTime() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
