@@ -32,5 +32,13 @@ public class MinMaxFee implements FeeCalculatorStrategy {
     public final double additionalTime() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+    public int getMaxTime() {
+        return maxTime;
+    }
+
+    public final void setMaxTime(int maxTime) {
+        this.maxTime = maxTime;
+    }
     
 }
