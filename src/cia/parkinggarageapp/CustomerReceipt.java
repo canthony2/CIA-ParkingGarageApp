@@ -4,13 +4,13 @@ package cia.parkinggarageapp;
  *
  * @author knyghtspup
  */
-public class Receipt {
+public class CustomerReceipt {
 
-    public Receipt() {
+    public CustomerReceipt() {
         
     }
 
-    public final void printReceipt(String ticketId, double hoursparked) {
+    public final void printCustomerReceipt() {
         
     }
 

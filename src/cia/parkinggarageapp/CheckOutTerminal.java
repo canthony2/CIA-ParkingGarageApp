@@ -7,22 +7,23 @@ package cia.parkinggarageapp;
 public class CheckOutTerminal {
 
     private String businessName;
-    private Receipt receipt;
+    private CustomerReceipt custReceipt;
+    private BusinessReceipt businessReceipt;
+    private DisplayScreen ds;
     
     public CheckOutTerminal(String ticketId, double hoursParked) {
-        receipt = new Receipt();
+        custReceipt = new CustomerReceipt();
+        ds = new DisplayScreen();
+        ds.displayCustomerFarewellMessage();
     }
     
     public final void readTicket(String ticketId, double hoursParked) {
-        receipt.printReceipt(ticketId, hoursParked);
+        
     }
     
-    public final void printBusinessReceipt() {
-        receipt.printBusinessReceipt();
-    }
-    
-    public final void displayCustomerFarewellMessage() {
-//        JOptionPane
+    public final void printReceipts() {
+        custReceipt.printCustomerReceipt();
+        businessReceipt.printBusinessReceipt();
     }
 
     public String getBusinessName() {
