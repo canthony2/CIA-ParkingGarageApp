@@ -11,7 +11,7 @@ public class CheckInTerminal {
     private CheckOutTerminal cot;
     
     public final void newVehicle(String ticketId, double hoursParked, FeeCalculatorStrategy fcs) {
-        //pass ticketId to CheckOutTerminal
+        //delegate finding fees to CheckOutTerminal
         cot = new CheckOutTerminal(ticketId, hoursParked, fcs);
     }
 
