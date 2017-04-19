@@ -6,7 +6,7 @@ package cia.parkinggarageapp;
  */
 public class Receipt {
 
-    public Receipt(String ticketId, double hoursParked) {
+    public Receipt() {
         
     }
 

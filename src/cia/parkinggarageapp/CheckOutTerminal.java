@@ -6,17 +6,12 @@ package cia.parkinggarageapp;
  */
 public class CheckOutTerminal {
 
+    private String businessName;
     private Receipt receipt;
     private FeeCalculatorStrategy fcs;
-    private BusinessInformation businessInfo;
     
-    public CheckOutTerminal(String ticketId, double hoursParked) {
-        receipt = new Receipt(ticketId, hoursParked);
-        businessInfo = new BusinessInformation(ticketId, hoursParked);
-    }
-
-    public final void retrieveBusinessName(String businessName) {
-        
+    public CheckOutTerminal(String ticketId, double hoursParked, FeeCalculatorStrategy fcs) {
+        receipt = new Receipt();
     }
     
     public final void calculateFee() {
@@ -29,6 +24,19 @@ public class CheckOutTerminal {
     
     public final void printBusinessReceipt() {
         receipt.printBusinessReceipt();
+    }
+    
+    public String getBusinessName() {
+        return businessName;
+    }
+    
+    public final void setBusinessName(String businessName) {
+        if(businessName == null || businessName.isEmpty()) {
+            System.out.println("Unregistered Business Name");
+        }
+        else{
+            this.businessName = businessName;
+        }
     }
     
 }

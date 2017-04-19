@@ -10,10 +10,9 @@ public class CheckInTerminal {
     private double hoursParked;
     private CheckOutTerminal cot;
     
-    public final void newVehicle(String ticketId, double hoursParked) {
+    public final void newVehicle(String ticketId, double hoursParked, FeeCalculatorStrategy fcs) {
         //pass ticketId to CheckOutTerminal
-        cot = new CheckOutTerminal(ticketId, hoursParked);
-        cot.readTicket(ticketId, hoursParked);
+        cot = new CheckOutTerminal(ticketId, hoursParked, fcs);
     }
 
     public String getTicketId() {

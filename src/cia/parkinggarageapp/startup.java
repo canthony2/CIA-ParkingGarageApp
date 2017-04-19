@@ -35,7 +35,7 @@ public class startup {
 
         CheckInTerminal cit = new CheckInTerminal();
         
-        cit.newVehicle("", 0.0);
+//        cit.newVehicle(//ticketId, hoursParked);
         
     }
     
