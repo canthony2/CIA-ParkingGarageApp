@@ -27,7 +27,6 @@ public class CheckInTerminal {
     
     public final void endVisit() {
         cot.displayCustomerFarewellMessage();
-        cot.displayBusinessTotalInformation();
     }
     
     public String getTicketId() {

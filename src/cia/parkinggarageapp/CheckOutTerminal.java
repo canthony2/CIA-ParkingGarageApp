@@ -21,14 +21,10 @@ public class CheckOutTerminal {
         receipt.printBusinessReceipt();
     }
     
-    void displayCustomerFarewellMessage() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final void displayCustomerFarewellMessage() {
+//        JOptionPane
     }
 
-    void displayBusinessTotalInformation() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
     public String getBusinessName() {
         return businessName;
     }
