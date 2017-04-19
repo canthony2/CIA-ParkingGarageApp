@@ -29,6 +29,5 @@ public class Calculator {
     public final void setFcs(FeeCalculatorStrategy fcs) {
         this.fcs = fcs;
     }
-
     
 }
