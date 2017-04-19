@@ -14,22 +14,12 @@ public class MinMaxFee implements FeeCalculatorStrategy {
     private int maxTime;
     
     @Override
-    public final double minimumCharge() {
+    public CheckOutTerminal calculateCustomerFee(double hoursParked, FeeCalculatorStrategy fcs) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public final int paidTime() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public final double additionalCharge() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public final double additionalTime() {
+    public CheckOutTerminal calculateBusinessTotals(double hoursParked, FeeCalculatorStrategy fcs) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
@@ -40,5 +30,5 @@ public class MinMaxFee implements FeeCalculatorStrategy {
     public final void setMaxTime(int maxTime) {
         this.maxTime = maxTime;
     }
-    
+
 }

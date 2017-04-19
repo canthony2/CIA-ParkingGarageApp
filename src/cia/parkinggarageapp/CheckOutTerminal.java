@@ -8,15 +8,14 @@ public class CheckOutTerminal {
 
     private String businessName;
     private Receipt receipt;
-    private FeeCalculatorStrategy fcs;
     
     public CheckOutTerminal(String ticketId, double hoursParked, FeeCalculatorStrategy fcs) {
         receipt = new Receipt();
     }
     
-    public final void calculateFee() {
-        
-    }
+//    public final void calculateFee() {
+//        
+//    }
     
     public final void readTicket(String ticketId, double hoursParked) {
         receipt.printReceipt(ticketId, hoursParked);

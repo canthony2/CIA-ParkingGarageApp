@@ -15,6 +15,14 @@ public class CheckInTerminal {
         cot = new CheckOutTerminal(ticketId, hoursParked, fcs);
     }
 
+    private final CheckOutTerminal calculateCustomerFee(double hoursParked, FeeCalculatorStrategy fcs) {
+        return fcs.calculateCustomerFee(hoursParked, fcs);
+    }
+    
+    private final CheckOutTerminal calculateBusinessTotals(double hoursParked, FeeCalculatorStrategy fcs) {
+        return fcs.calculateBusinessTotals(hoursParked, fcs);
+    }
+    
     public String getTicketId() {
         return ticketId;
     }

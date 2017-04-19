@@ -33,8 +33,8 @@ public class startup {
 //                  Automated machine logs total hours and total fee's for manager
 //          End of Process
 
-        CheckInTerminal cit = new CheckInTerminal();
-        
+//        CheckInTerminal cit = new CheckInTerminal();
+//        
 //        cit.newVehicle(//ticketId, hoursParked);
         
     }

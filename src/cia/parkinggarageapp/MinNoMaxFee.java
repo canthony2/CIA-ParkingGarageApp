@@ -12,23 +12,13 @@ package cia.parkinggarageapp;
 public class MinNoMaxFee implements FeeCalculatorStrategy {
 
     @Override
-    public double minimumCharge() {
+    public CheckOutTerminal calculateCustomerFee(double hoursParked, FeeCalculatorStrategy fcs) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public int paidTime() {
+    public CheckOutTerminal calculateBusinessTotals(double hoursParked, FeeCalculatorStrategy fcs) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
-    @Override
-    public double additionalCharge() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public double additionalTime() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
 }
