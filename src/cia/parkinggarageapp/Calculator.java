@@ -11,6 +11,7 @@ package cia.parkinggarageapp;
  */
 public class Calculator implements FeeCalculatorStrategy {
     
-    
+    private MinMaxFee mmf;
+    private MinNoMaxFee mnmf;
     
 }
