@@ -11,9 +11,18 @@ package cia.parkinggarageapp;
  */
 public class Calculator {
     
-    private MinMaxFee mmf;
-    private MinNoMaxFee mnmf;
+    private FeeCalculatorStrategy fcs;
+
+    public Calculator() {
+        setFcs(fcs);
+    }
     
-    
+    public final FeeCalculatorStrategy getFcs() {
+        return fcs;
+    }
+
+    public final void setFcs(FeeCalculatorStrategy fcs) {
+        this.fcs = fcs;
+    }
     
 }
