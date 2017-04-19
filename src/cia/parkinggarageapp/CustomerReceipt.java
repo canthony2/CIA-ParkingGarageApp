@@ -14,8 +14,4 @@ public class CustomerReceipt {
         
     }
 
-    public final void printBusinessReceipt() {
-        
-    }
-    
 }

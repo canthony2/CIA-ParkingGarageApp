@@ -11,6 +11,8 @@ package cia.parkinggarageapp;
  */
 public class BusinessReceipt {
     
-    
+    public final void printBusinessReceipt() {
+        
+    }
     
 }
