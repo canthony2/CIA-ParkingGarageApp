@@ -1,7 +1,5 @@
 package cia.parkinggarageapp;
 
-import javax.swing.JOptionPane;
-
 /**
  *
  * @author knyghtspup
@@ -33,9 +31,10 @@ public class startup {
 //                  Automated machine logs total hours and total fee's for manager
 //          End of Process
 
-//        CheckInTerminal cit = new CheckInTerminal();
-//        
-//        cit.newVehicle(//ticketId, hoursParked);
+        FeeCalculatorStractegy fcs = new FeeCalculatorStrategy();
+        CheckInTerminal cit = new CheckInTerminal();
+        
+        cit.newVehicle("", 0.0, fcs);
         
     }
     

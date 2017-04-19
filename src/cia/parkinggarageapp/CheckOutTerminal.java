@@ -13,10 +13,6 @@ public class CheckOutTerminal {
         receipt = new Receipt();
     }
     
-//    public final void calculateFee() {
-//        
-//    }
-    
     public final void readTicket(String ticketId, double hoursParked) {
         receipt.printReceipt(ticketId, hoursParked);
     }
