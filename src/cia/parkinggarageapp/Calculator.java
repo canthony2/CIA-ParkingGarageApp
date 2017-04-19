@@ -11,7 +11,6 @@ package cia.parkinggarageapp;
  */
 public class Calculator {
     
-    private double businessTotals;
     private FeeCalculatorStrategy fcs;
 
     public Calculator() {
