@@ -11,13 +11,16 @@ package cia.parkinggarageapp;
  */
 public class Calculator {
     
+    private double businessTotals;
     private FeeCalculatorStrategy fcs;
 
     public Calculator() {
         setFcs(fcs);
     }
     
-    
+    public final void beginCalculations() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     public final FeeCalculatorStrategy getFcs() {
         return fcs;
@@ -26,5 +29,6 @@ public class Calculator {
     public final void setFcs(FeeCalculatorStrategy fcs) {
         this.fcs = fcs;
     }
+
     
 }

@@ -20,10 +20,10 @@ public class CheckOutTerminal {
     }
     
     public final void readTicketToStartCalculations(String ticketId, double hoursParked) {
-        
+        //information passed on will be calculated for both the fee due
+        //and for the business totals
+        calc.beginCalculations();
     }
-    
-    
     
     public final void customerFarewellMessage() {
         ds.displayCustomerFarewellMessage();
