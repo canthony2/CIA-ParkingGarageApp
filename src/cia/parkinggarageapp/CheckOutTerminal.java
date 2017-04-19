@@ -10,19 +10,13 @@ public class CheckOutTerminal {
     private CustomerReceipt custReceipt;
     private BusinessReceipt businessReceipt;
     private DisplayScreen ds;
-    private Calculator calc;
+    private FeeCalculatorStrategy fcs;
     
     public CheckOutTerminal(String ticketId, double hoursParked) {
-        calc = new Calculator();
+        setFcs(fcs);
         custReceipt = new CustomerReceipt();
         businessReceipt = new BusinessReceipt();
         ds = new DisplayScreen();
-    }
-    
-    public final void readTicketToStartCalculations(String ticketId, double hoursParked) {
-        //information passed on will be calculated for both the fee due
-        //and for the business totals
-        calc.beginCalculations();
     }
     
     public final void customerFarewellMessage() {
@@ -47,4 +41,12 @@ public class CheckOutTerminal {
         }
     }
 
+    public final FeeCalculatorStrategy getFcs() {
+        return fcs;
+    }
+
+    public final void setFcs(FeeCalculatorStrategy fcs) {
+        this.fcs = fcs;
+    }
+    
 }

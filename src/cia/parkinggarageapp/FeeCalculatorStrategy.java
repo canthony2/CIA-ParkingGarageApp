@@ -12,16 +12,16 @@ package cia.parkinggarageapp;
  */
 public interface FeeCalculatorStrategy {
     
-    public abstract double minimumCharge();
+    public abstract double setMinimumCharge();
+    public abstract double getMinimumCharge();
     
-    public abstract int paidTime();
+    public abstract int setPaidTime();
+    public abstract int getPaidTime();
     
-    public abstract double additionalCharge();
+    public abstract double setAdditionalCharge();
+    public abstract double getAdditionalCharge();
     
-    public abstract double additionalTime();
-
-    public abstract CheckOutTerminal calculateCustomerFee(double hoursParked, FeeCalculatorStrategy fcs);
-
-    public abstract CheckOutTerminal calculateBusinessTotals(double hoursParked, FeeCalculatorStrategy fcs);
+    public abstract double setAdditionalTime();
+    public abstract double getAdditionalTime();
     
 }
