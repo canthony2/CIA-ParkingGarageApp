@@ -10,15 +10,23 @@ public class CheckOutTerminal {
     private CustomerReceipt custReceipt;
     private BusinessReceipt businessReceipt;
     private DisplayScreen ds;
+    private Calculator calc;
     
     public CheckOutTerminal(String ticketId, double hoursParked) {
+        calc = new Calculator();
         custReceipt = new CustomerReceipt();
+        businessReceipt = new BusinessReceipt();
         ds = new DisplayScreen();
-        ds.displayCustomerFarewellMessage();
     }
     
-    public final void readTicket(String ticketId, double hoursParked) {
+    public final void readTicketToStartCalculations(String ticketId, double hoursParked) {
         
+    }
+    
+    
+    
+    public final void customerFarewellMessage() {
+        ds.displayCustomerFarewellMessage();
     }
     
     public final void printReceipts() {

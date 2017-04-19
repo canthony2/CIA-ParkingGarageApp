@@ -11,17 +11,9 @@ public class CheckInTerminal {
     private CheckOutTerminal cot;
     
     public final void newVehicle(String ticketId, double hoursParked) {
-        //delegate finding fees to CheckOutTerminal's calculator
+        //delegate finding fees to the calculator via the CheckOutTerminal
         cot = new CheckOutTerminal(ticketId, hoursParked);
     }
-
-//    private final CheckOutTerminal calculateCustomerFee(double hoursParked, FeeCalculatorStrategy fcs) {
-//        return fcs.calculateCustomerFee(hoursParked, fcs);
-//    }
-//    
-//    private final CheckOutTerminal calculateBusinessTotals(double hoursParked, FeeCalculatorStrategy fcs) {
-//        return fcs.calculateBusinessTotals(hoursParked, fcs);
-//    }
     
     public final void endVisit() {
         

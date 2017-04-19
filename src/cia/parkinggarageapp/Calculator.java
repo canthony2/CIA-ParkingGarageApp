@@ -17,6 +17,8 @@ public class Calculator {
         setFcs(fcs);
     }
     
+    
+    
     public final FeeCalculatorStrategy getFcs() {
         return fcs;
     }
