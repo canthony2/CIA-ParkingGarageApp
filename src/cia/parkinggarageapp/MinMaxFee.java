@@ -11,6 +11,16 @@ package cia.parkinggarageapp;
  */
 public class MinMaxFee {
     
+    private double maxTime;
+
     
+    
+    public double getMaxTime() {
+        return maxTime;
+    }
+
+    public void setMaxTime(double maxTime) {
+        this.maxTime = maxTime;
+    }
     
 }

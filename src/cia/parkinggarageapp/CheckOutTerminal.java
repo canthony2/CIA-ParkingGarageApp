@@ -9,7 +9,7 @@ public class CheckOutTerminal {
     private String businessName;
     private Receipt receipt;
     
-    public CheckOutTerminal(String ticketId, double hoursParked, FeeCalculatorStrategy fcs) {
+    public CheckOutTerminal(String ticketId, double hoursParked) {
         receipt = new Receipt();
     }
     
@@ -19,6 +19,14 @@ public class CheckOutTerminal {
     
     public final void printBusinessReceipt() {
         receipt.printBusinessReceipt();
+    }
+    
+    void displayCustomerFarewellMessage() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    void displayBusinessTotalInformation() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     public String getBusinessName() {
@@ -33,5 +41,5 @@ public class CheckOutTerminal {
             this.businessName = businessName;
         }
     }
-    
+
 }

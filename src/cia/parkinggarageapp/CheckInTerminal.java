@@ -10,9 +10,11 @@ public class CheckInTerminal {
     private double hoursParked;
     private CheckOutTerminal cot;
     
-    public final void newVehicle(String ticketId, double hoursParked, FeeCalculatorStrategy fcs) {
+    public final void newVehicle(String ticketId, double hoursParked) {
         //delegate finding fees to CheckOutTerminal
-        cot = new CheckOutTerminal(ticketId, hoursParked, fcs);
+        cot = new CheckOutTerminal(ticketId, hoursParked);
+//        cot.calculateCustomerFee(hoursParked);
+//        cot.calculateBusinessTotals();
     }
 
     private final CheckOutTerminal calculateCustomerFee(double hoursParked, FeeCalculatorStrategy fcs) {
@@ -21,6 +23,11 @@ public class CheckInTerminal {
     
     private final CheckOutTerminal calculateBusinessTotals(double hoursParked, FeeCalculatorStrategy fcs) {
         return fcs.calculateBusinessTotals(hoursParked, fcs);
+    }
+    
+    public final void endVisit() {
+        cot.displayCustomerFarewellMessage();
+        cot.displayBusinessTotalInformation();
     }
     
     public String getTicketId() {
@@ -41,5 +48,7 @@ public class CheckInTerminal {
     public final void setHoursParked(double hoursParked) {
         this.hoursParked = hoursParked;
     }
+
+    
 
 }

@@ -9,9 +9,11 @@ package cia.parkinggarageapp;
  *
  * @author canthony2
  */
-public abstract class Calculator implements FeeCalculatorStrategy {
+public class Calculator {
     
     private MinMaxFee mmf;
     private MinNoMaxFee mnmf;
+    
+    
     
 }

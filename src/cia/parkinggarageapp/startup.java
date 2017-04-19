@@ -31,10 +31,11 @@ public class startup {
 //                  Automated machine logs total hours and total fee's for manager
 //          End of Process
 
-        FeeCalculatorStractegy fcs = new FeeCalculatorStrategy();
+//        FeeCalculatorStrategy fcs = new Calculator();
         CheckInTerminal cit = new CheckInTerminal();
         
-        cit.newVehicle("", 0.0, fcs);
+        cit.newVehicle("", 0.0);
+        cit.endVisit();
         
     }
     
