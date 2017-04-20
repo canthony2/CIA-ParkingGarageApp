@@ -7,8 +7,6 @@ package cia.parkinggarageapp;
 public class CheckOutTerminal {
 
     private String businessName;
-    private CustomerReceipt custReceipt;
-    private BusinessReceipt businessReceipt;
 //    private DisplayScreen ds;
     private FeeCalculatorStrategy fcs;
     private ReceiptStrategyObject rso;
@@ -16,8 +14,6 @@ public class CheckOutTerminal {
     public CheckOutTerminal(String ticketId, double hoursParked) {
         setFcs(fcs);
         setRso(rso);
-        custReceipt = new CustomerReceipt();
-        businessReceipt = new BusinessReceipt();
 //        ds = new DisplayScreen();
     }
     
