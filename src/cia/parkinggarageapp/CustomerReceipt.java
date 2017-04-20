@@ -13,4 +13,10 @@ public class CustomerReceipt implements ReceiptStrategyObject {
         }
     }
 
+    public final void printCustomerReceipt(String ticketId, String businessName, double hoursParked, double feeOwed) {
+        System.out.println("Dear owner of ticket number " + ticketId + ", "
+        + "thank you for parking at " + businessName + ". You have parked for " + hoursParked + 
+                " and owe " + feeOwed + ".");
+    }
+    
 }
