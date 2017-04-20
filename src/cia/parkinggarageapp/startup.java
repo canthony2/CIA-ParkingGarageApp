@@ -30,11 +30,13 @@ public class startup {
 //                  Automated machine prints receipt
 //                  Automated machine logs total hours and total fee's for manager
 //          End of Process
-
+        
         CheckInTerminal cit = new CheckInTerminal();
         
         cit.newVehicle("", 0.0);
-        cit.endVisit();
+        ReceiptStrategyObject rso = null;
+        FeeCalculatorStrategy fcs = null;
+        cit.endVisit(fcs, rso);
         
     }
     

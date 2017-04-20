@@ -15,8 +15,9 @@ public class CheckInTerminal {
         cot = new CheckOutTerminal(ticketId, hoursParked);
     }
     
-    public final void endVisit() {
-        
+    public final void endVisit(FeeCalculatorStrategy fcs, ReceiptStrategyObject rso) {
+        cot.setFcs(fcs);
+        cot.setRso(rso);
     }
     
     public String getTicketId() {
