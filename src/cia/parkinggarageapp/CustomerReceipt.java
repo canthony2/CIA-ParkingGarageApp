@@ -6,6 +6,10 @@ package cia.parkinggarageapp;
  */
 public class CustomerReceipt implements ReceiptStrategyObject {
 
+    public CustomerReceipt(String ticketId, String businessName, double hoursParked, double feeOwed) {
+        printCustomerReceipt(ticketId, businessName, hoursParked, feeOwed);
+    }
+    
     @Override
     public final void setBusinessName(String businessName) {
         if(businessName == null || businessName.isEmpty()) {
