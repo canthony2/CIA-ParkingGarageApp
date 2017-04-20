@@ -16,45 +16,20 @@ public class MinMaxFee implements FeeCalculatorStrategy {
     
     
     @Override
-    public double setMinimumCharge() {
+    public double setMinimumTime(int minimumTime) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public double getMinimumCharge() {
+    public double setBaseFee(double baseFee) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
     @Override
-    public int setPaidTime() {
+    public double setAdditionalChargePerHour(double additionalChargePerHour) {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
-
-    @Override
-    public int getPaidTime() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public double setAdditionalCharge() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public double getAdditionalCharge() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public double setAdditionalTime() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-
-    @Override
-    public double getAdditionalTime() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
-    }
-    
+   
     public double getMaxTime() {
         return maxTime;
     }
@@ -62,5 +37,6 @@ public class MinMaxFee implements FeeCalculatorStrategy {
     public void setMaxTime(double maxTime) {
         this.maxTime = maxTime;
     }
-   
+
+    
 }
