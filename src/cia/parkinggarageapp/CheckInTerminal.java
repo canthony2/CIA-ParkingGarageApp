@@ -40,4 +40,16 @@ public class CheckInTerminal {
         this.hoursParked = hoursParked;
     }
 
+    public String getBusinessName() {
+        return businessName;
+    }
+
+    public void setBusinessName(String businessName) {
+        this.businessName = businessName;
+    }
+
+    public double getFeeOwed() {
+        return feeOwed;
+    }
+
 }
