@@ -33,6 +33,7 @@ public class startup {
 
 //        FeeCalculatorStrategy fcs = new MinMaxFee(hoursParked, maxCharge, minimumTime, baseFee, additionalChargePerHour);
         CheckInTerminal cit = new CheckInTerminal();
+        Business business = new Business ("John Smith Parking Garage");
         
         cit.newVehicle("13", 5.9);
         cit.endVisit(
