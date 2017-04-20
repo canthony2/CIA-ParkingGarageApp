@@ -21,8 +21,9 @@ public class BusinessReceipt implements ReceiptStrategyObject {
         }
     }
 
-    public final void printBusinessReceipt() {
-        
+    public final void printBusinessReceipt(String businessName, double totalHoursCharged, double totalFeesCollected) {
+        System.out.println("The " + businessName + " business has logged a total of " + totalHoursCharged +
+                " hours charged and " + totalFeesCollected + " fees collected in total.");
     }
     
     public final double getTotalHoursCharged() {
