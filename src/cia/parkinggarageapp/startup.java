@@ -31,6 +31,7 @@ public class startup {
 //                  Automated machine logs total hours and total fee's for manager
 //          End of Process
 
+//        FeeCalculatorStrategy fcs = new MinMaxFee(hoursParked, maxCharge, minimumTime, baseFee, additionalChargePerHour);
         CheckInTerminal cit = new CheckInTerminal();
         
         cit.newVehicle("13", 5.9);
