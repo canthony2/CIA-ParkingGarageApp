@@ -46,6 +46,9 @@ public class MinMaxFee implements FeeCalculatorStrategy {
     }
 
     public final void setMaxTime(double maxTime) {
+        if(maxTime < .01) {
+            System.out.println("Please enter a value inside the minimum range");
+        }
         this.maxTime = maxTime;
     }
    
