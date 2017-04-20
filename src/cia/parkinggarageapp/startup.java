@@ -35,7 +35,7 @@ public class startup {
         
         cit.newVehicle("13", 5.9);
         cit.endVisit(
-                new MinMaxFee(10.00),
+                new MinMaxFee(5.9, 10.00, 3, 2.00, .5),
                 new CustomerReceipt()
         );
         

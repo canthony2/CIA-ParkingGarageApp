@@ -11,7 +11,7 @@ package cia.parkinggarageapp;
  */
 public class MinNoMaxFee implements FeeCalculatorStrategy {
 
-    public MinNoMaxFee(double hoursParked, double maxCharge, int minimumTime, double baseFee, double additionalChargePerHour, double feeOwed) {
+    public MinNoMaxFee(double hoursParked, double maxCharge, int minimumTime, double baseFee, double additionalChargePerHour) {
         setMinimumTime(minimumTime);
         setBaseFee(baseFee);
         setAdditionalChargePerHour(additionalChargePerHour);

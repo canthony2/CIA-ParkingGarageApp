@@ -14,7 +14,7 @@ public class MinMaxFee implements FeeCalculatorStrategy {
     private double maxCharge;
     private double feeOwed;
 
-    public MinMaxFee(double hoursParked, double maxCharge, int minimumTime, double baseFee, double additionalChargePerHour, double feeOwed) {
+    public MinMaxFee(double hoursParked, double maxCharge, int minimumTime, double baseFee, double additionalChargePerHour) {
         setMaxCharge(maxCharge);
         setMinimumTime(minimumTime);
         setBaseFee(baseFee);
