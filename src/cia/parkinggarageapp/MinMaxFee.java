@@ -37,6 +37,5 @@ public class MinMaxFee implements FeeCalculatorStrategy {
     public void setMaxTime(double maxTime) {
         this.maxTime = maxTime;
     }
-
-    
+   
 }
