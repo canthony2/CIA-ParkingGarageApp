@@ -37,12 +37,17 @@ public class MinNoMaxFee implements FeeCalculatorStrategy {
         return additionalChargePerHour;
     }
 
-    public double getFeeOwed() {
-        return feeOwed;
-    }
-
-    public void setFeeOwed(double feeOwed) {
-        this.feeOwed = feeOwed;
-    }
+    @Override
+    public final double getFeeOwed(double hoursParked, double additionalChargePerHour, int minimumTime, double baseFee) {
+        if(hoursParked < 1 || additionalChargePerHour < .01 || minimumTime < 1 || baseFee < .01) {
+            System.out.println("Invalid values detected: please go back and input correct values");
+        }
+        if(hoursParked > minimumTime) {
+            return ((hoursParked - minimumTime) * additionalChargePerHour) + baseFee;
+        }
+            else{ 
+                return baseFee;
+            }
+        }
     
 }
