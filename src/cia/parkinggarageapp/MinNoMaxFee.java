@@ -11,6 +11,8 @@ package cia.parkinggarageapp;
  */
 public class MinNoMaxFee implements FeeCalculatorStrategy {
 
+    private double feeOwed;
+
     @Override
     public final double setMinimumTime(int minimumTime) {
         if(minimumTime < 1) {
@@ -33,6 +35,14 @@ public class MinNoMaxFee implements FeeCalculatorStrategy {
             System.out.println("Please enter a value within the minimum range");
         }
         return additionalChargePerHour;
+    }
+
+    public double getFeeOwed() {
+        return feeOwed;
+    }
+
+    public void setFeeOwed(double feeOwed) {
+        this.feeOwed = feeOwed;
     }
     
 }
