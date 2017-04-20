@@ -19,8 +19,8 @@ public class CheckOutTerminal {
         ds = new DisplayScreen();
     }
     
-    public final void customerFarewellMessage() {
-        ds.displayCustomerFarewellMessage();
+    public final void customerFarewellMessage(double hoursParked, double feeOwed) {
+        ds.displayCustomerFarewellMessage(hoursParked, feeOwed);
     }
     
     public final void printReceipts() {

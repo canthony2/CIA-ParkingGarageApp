@@ -11,8 +11,8 @@ package cia.parkinggarageapp;
  */
 public class DisplayScreen {
 
-    public final void displayCustomerFarewellMessage() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final void displayCustomerFarewellMessage(double hoursParked, double feeOwed) {
+        
     }
     
 }
