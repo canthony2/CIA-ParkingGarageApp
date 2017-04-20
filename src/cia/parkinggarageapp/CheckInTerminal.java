@@ -21,7 +21,7 @@ public class CheckInTerminal {
         cot.printCustomerReceipt(ticketId, businessName, hoursParked, feeOwed);
     }
     
-    public String getTicketId() {
+    public final String getTicketId() {
         return ticketId;
     }
 
@@ -32,23 +32,33 @@ public class CheckInTerminal {
         this.ticketId = ticketId;
     }
 
-    public double getHoursParked() {
+    public final double getHoursParked() {
         return hoursParked;
     }
 
     public final void setHoursParked(double hoursParked) {
-        this.hoursParked = hoursParked;
+        if(hoursParked < .01) {
+            System.out.println("Please enter a digit within the minimum range");
+        }
+        else {
+            this.hoursParked = hoursParked;
+        }
     }
 
-    public String getBusinessName() {
+    public final String getBusinessName() {
         return businessName;
     }
 
-    public void setBusinessName(String businessName) {
-        this.businessName = businessName;
+    public final void setBusinessName(String businessName) {
+        if(businessName == null || businessName.isEmpty()) {
+            System.out.println("Unregistered Business Name");
+        }
+        else{
+            this.businessName = businessName;
+        }
     }
 
-    public double getFeeOwed() {
+    public final double getFeeOwed() {
         return feeOwed;
     }
 
