@@ -8,6 +8,8 @@ public class CheckInTerminal {
 
     private String ticketId;
     private double hoursParked;
+    private String businessName;
+    private double feeOwed;
     private CheckOutTerminal cot;
     
     public final void newVehicle(String ticketId, double hoursParked) {
@@ -15,9 +17,8 @@ public class CheckInTerminal {
         cot = new CheckOutTerminal(ticketId, hoursParked);
     }
     
-    public final void endVisit(FeeCalculatorStrategy fcs, ReceiptStrategyObject rso) {
-        cot.setFcs(fcs);
-        cot.setRso(rso);
+    public final void endVisit(MinMaxFee minMaxFee) {
+        cot.printCustomerReceipt(ticketId, businessName, hoursParked, feeOwed);
     }
     
     public String getTicketId() {

@@ -35,8 +35,8 @@ public class startup {
         
         cit.newVehicle("13", 5.9);
         cit.endVisit(
-                new MinMaxFee(5.9, 10.00, 3, 2.00, .5),
-                new CustomerReceipt("13", "John Smith Parking Garage", 5.9)
+                new MinMaxFee(5.9, 10.00, 3, 2.00, .5)
+//                new CustomerReceipt("13", "John Smith Parking Garage", 5.9)
         );
         
     }
