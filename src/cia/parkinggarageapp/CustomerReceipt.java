@@ -6,8 +6,11 @@ package cia.parkinggarageapp;
  */
 public class CustomerReceipt implements ReceiptStrategyObject {
 
-    public final void printCustomerReceipt() {
-        System.out.println("");
+    @Override
+    public void setBusinessName(String businessName) {
+        if(businessName == null || businessName.isEmpty()) {
+            System.out.println("Please enter a valid business name");
+        }
     }
 
 }

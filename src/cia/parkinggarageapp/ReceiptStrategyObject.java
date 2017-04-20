@@ -11,6 +11,6 @@ package cia.parkinggarageapp;
  */
 public interface ReceiptStrategyObject {
     
-    
+    public abstract void setBusinessName(String businessName);
     
 }

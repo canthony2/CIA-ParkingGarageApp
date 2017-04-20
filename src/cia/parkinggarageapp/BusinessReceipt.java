@@ -11,8 +11,14 @@ package cia.parkinggarageapp;
  */
 public class BusinessReceipt implements ReceiptStrategyObject {
     
-    public final void printBusinessReceipt() {
-        
+    private double totalHoursCharged;
+    private double totalFeesCollected;
+
+    @Override
+    public void setBusinessName(String businessName) {
+        if(businessName == null || businessName.isEmpty()) {
+            System.out.println("Please enter a valid business name");
+        }
     }
     
 }
