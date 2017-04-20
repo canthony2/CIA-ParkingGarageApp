@@ -11,11 +11,11 @@ package cia.parkinggarageapp;
  */
 public class MinMaxFee implements FeeCalculatorStrategy {
     
-    private double maxTime;
+    private double maxCharge;
     private double feeOwed;
 
-    public MinMaxFee(double maxTime) {
-        setMaxTime(maxTime);
+    public MinMaxFee(double maxCharge) {
+        setMaxCharge(maxCharge);
     }
     
     @Override
@@ -44,26 +44,29 @@ public class MinMaxFee implements FeeCalculatorStrategy {
    
     @Override
     public final double getFeeOwed(double hoursParked, double additionalChargePerHour, int minimumTime, double baseFee) {
-        if(hoursParked < 1 || hoursParked > maxTime || additionalChargePerHour < .01 || minimumTime < 1 || baseFee < .01) {
+        if(hoursParked < 1 || additionalChargePerHour < .01 || minimumTime < 1 || baseFee < .01) {
             System.out.println("Invalid values detected: please go back and input correct values");
         }
-        if(hoursParked > minimumTime) {
+        if(hoursParked > minimumTime && feeOwed < maxCharge) {
             return ((hoursParked - minimumTime) * additionalChargePerHour) + baseFee;
         }
-            else{ 
-                return baseFee;
+        else if(hoursParked > minimumTime && feeOwed > maxCharge) { 
+                return maxCharge;
+            }
+        else {
+            return baseFee;
             }
         }
     
-    public final double getMaxTime() {
-        return maxTime;
+    public final double getMaxCharge() {
+        return maxCharge;
     }
 
-    public final void setMaxTime(double maxTime) {
-        if(maxTime < .01) {
+    public final void setMaxCharge(double maxCharge) {
+        if(maxCharge < .01) {
             System.out.println("Please enter a value inside the minimum range");
         }
-        this.maxTime = maxTime;
+        this.maxCharge = maxCharge;
     }
    
 }
