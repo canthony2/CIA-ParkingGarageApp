@@ -9,10 +9,8 @@ package cia.parkinggarageapp;
  *
  * @author knyghtspup
  */
-public class BusinessReceipt implements ReceiptStrategyObject {
+public interface ReceiptStrategyObject {
     
-    public final void printBusinessReceipt() {
-        
-    }
+    
     
 }

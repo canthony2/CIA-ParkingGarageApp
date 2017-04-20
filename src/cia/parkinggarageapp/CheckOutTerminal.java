@@ -9,25 +9,22 @@ public class CheckOutTerminal {
     private String businessName;
     private CustomerReceipt custReceipt;
     private BusinessReceipt businessReceipt;
-    private DisplayScreen ds;
+//    private DisplayScreen ds;
     private FeeCalculatorStrategy fcs;
+    private ReceiptStrategyObject rso;
     
     public CheckOutTerminal(String ticketId, double hoursParked) {
         setFcs(fcs);
+        setRso(rso);
         custReceipt = new CustomerReceipt();
         businessReceipt = new BusinessReceipt();
-        ds = new DisplayScreen();
+//        ds = new DisplayScreen();
     }
     
-    public final void customerFarewellMessage(double hoursParked, double feeOwed) {
-        ds.displayCustomerFarewellMessage(hoursParked, feeOwed);
-    }
+//    public final void customerFarewellMessage(double hoursParked, double feeOwed) {
+//        ds.displayCustomerFarewellMessage(hoursParked, feeOwed);
+//    }
     
-    public final void printReceipts() {
-        custReceipt.printCustomerReceipt();
-        businessReceipt.printBusinessReceipt();
-    }
-
     public String getBusinessName() {
         return businessName;
     }
@@ -47,6 +44,14 @@ public class CheckOutTerminal {
 
     public final void setFcs(FeeCalculatorStrategy fcs) {
         this.fcs = fcs;
+    }
+    
+    public final ReceiptStrategyObject getRso() {
+        return rso;
+    }
+    
+    public final void setRso (ReceiptStrategyObject rso) {
+        this.rso = rso;
     }
     
 }
