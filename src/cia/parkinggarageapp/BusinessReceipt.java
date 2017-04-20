@@ -15,10 +15,30 @@ public class BusinessReceipt implements ReceiptStrategyObject {
     private double totalFeesCollected;
 
     @Override
-    public void setBusinessName(String businessName) {
+    public final void setBusinessName(String businessName) {
         if(businessName == null || businessName.isEmpty()) {
             System.out.println("Please enter a valid business name");
         }
+    }
+
+    public final void printBusinessReceipt() {
+        
+    }
+    
+    public final double getTotalHoursCharged() {
+        return totalHoursCharged;
+    }
+
+    public final void setTotalHoursCharged(double totalHoursCharged) {
+        this.totalHoursCharged = totalHoursCharged;
+    }
+
+    public final double getTotalFeesCollected() {
+        return totalFeesCollected;
+    }
+
+    public final void setTotalFeesCollected(double totalFeesCollected) {
+        this.totalFeesCollected = totalFeesCollected;
     }
     
 }
