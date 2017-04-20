@@ -13,28 +13,39 @@ public class MinMaxFee implements FeeCalculatorStrategy {
     
     private double maxTime;
 
-    
+    public MinMaxFee(double maxTime) {
+        setMaxTime(maxTime);
+    }
     
     @Override
-    public double setMinimumTime(int minimumTime) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final double setMinimumTime(int minimumTime) {
+        if(minimumTime < 1) {
+            System.out.println("Please enter a whole digit number");
+        }
+        return minimumTime;
     }
 
     @Override
-    public double setBaseFee(double baseFee) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final double setBaseFee(double baseFee) {
+        if(baseFee < .01) {
+            System.out.println("Please enter a value within the minimum range");
+        }
+        return baseFee;
     }
 
     @Override
-    public double setAdditionalChargePerHour(double additionalChargePerHour) {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public final double setAdditionalChargePerHour(double additionalChargePerHour) {
+        if(additionalChargePerHour < .01) {
+            System.out.println("Please enter a value within the minimum range");
+        }
+        return additionalChargePerHour;
     }
    
-    public double getMaxTime() {
+    public final double getMaxTime() {
         return maxTime;
     }
 
-    public void setMaxTime(double maxTime) {
+    public final void setMaxTime(double maxTime) {
         this.maxTime = maxTime;
     }
    
